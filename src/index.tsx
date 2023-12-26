@@ -23,14 +23,13 @@ const WINDOW_TOP_OFFSET = 26;
 
 const DRAG_CLASS = 'vaul-dragging';
 
-interface WithFadeFromProps {
-  snapPoints: (number | string)[];
-  fadeFromIndex: number;
+type WithFadeFromProps = {
+    snapPoints: (number | string)[];
+    fadeFromIndex: number;
 }
-
-interface WithoutFadeFromProps {
-  snapPoints?: (number | string)[];
-  fadeFromIndex?: never;
+type WithoutFadeFromProps = {
+    snapPoints?: (number | string)[];
+    fadeFromIndex?: never;
 }
 
 type DialogProps = {
